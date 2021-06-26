@@ -10,6 +10,7 @@ Covered in [`package.json`](./package.json)
 ## Inspiration
 
 ## What it does
+Caduceus is an all in one website where you can find all the basic information about Covid-19 as well as access to a doctor if you need!
 
 ## How we built it
 
