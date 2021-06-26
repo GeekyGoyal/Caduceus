@@ -13,6 +13,7 @@ function getPerson() {
     } else {
         socket.emit("person", "patient");
     }
+    getPerson = function(){} // only runs once now that this is empty
 }
 
 socket.on("chat message", (msg) => {
@@ -29,6 +30,7 @@ socket.on("number", (num) => {
 });
 
 form.addEventListener("submit", (e) => {
+    getPerson();
     e.preventDefault();
     if(input.value) {
         socket.emit("chat message", `${roomNumber}~~~${isDoctor}~~~${input.value}`);

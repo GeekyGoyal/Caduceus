@@ -42,8 +42,9 @@
              io.to(`room${currentDoctorId}`).emit("number", currentDoctorId);
              currentDoctorId++;
          } else if (person === "patient") {
+             console.log(currentPatientId);
             socket.join(`room${currentPatientId}`);
-            io.to(`room${currentDoctorId}`).emit("number", currentPatientId);
+            io.to(`room${currentPatientId}`).emit("number", currentPatientId);
             currentPatientId++;
         }
      });
