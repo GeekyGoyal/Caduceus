@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <style>
+
 html {
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
-  background-color: peachpuff;
+  background-color: #EEECE7;
   padding-left: 0px;
 }
 
@@ -13,15 +14,14 @@ html {
 header {
   padding: 20px;
   border-bottom: 1px solid;
-  border-color: #d8c6a1;
+  border-color: #413620;
   width: 100%;
   flex-flow: row;
   position: fixed;
   z-index: 1;
-  background-color:whitesmoke;
+  background-color: #EEECE7;
   display: flex;
   top: 0px;
-  width: 100%;
   left: 0;
 }
 
@@ -67,10 +67,21 @@ header {
 
 /*for text*/
 
+
 h1 {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 9px;
+  font-size: 30px;
+}
+
+#title {
+  padding: 0px;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: normal;
 }
 
 body {
@@ -103,7 +114,7 @@ section {
 }
 
 #covid{
-  background-color:#C7CEEA;
+  background-color: #A2BDCD;
 }
 
 #symptoms {
@@ -111,7 +122,7 @@ section {
   color: white;
 }
 
-.centered {
+p {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -129,12 +140,70 @@ ul {
   line-height: 1.6;
 }
 
-#spreads{
-  background-color: mediumturquoise;
-}
 #memes{
-  background-color: purple;
-  color:white;
+  background-color: #D0A48B;
+}
+
+#row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+  text-align: center;
+  
+}
+
+.column {
+  flex: 25%;
+  max-width: 55%;
+  padding: 0 4px;
+}
+
+.grid-item {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.picture {
+  display: flex;
+  padding: 15px;
+  padding-left: 60px;
+  text-align: left;
+  float: left;
+}
+
+.block {
+  display: flex;
+  text-align: justify;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.to-flex {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#img-1-cont {
+  display: inline-block;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: right;
+  justify-content: center;
+  margin: auto;
+}
+
+#cov-img {
+  float: right;
+  padding-left: 40px;
+  padding-right: 50px;
+}
+
+.cov-par {
+  width: 84%;
 }
 
 /* for message a doctor */
@@ -146,8 +215,13 @@ ul {
 }
 
 #doc {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
+ 
+#messaging {
+    background-color: #A2BDCD;
+}
+
 
 /* for footer */
 footer {
@@ -155,8 +229,9 @@ footer {
   text-align: center;
   margin-top: auto;
   margin-bottom: 0;
-  background-color: rgb(25, 155, 90);
+  background-color: #0D3B66;
   color:white;
+  width: 100%;
 }
   </style>
 
@@ -164,25 +239,25 @@ footer {
 <html>
 
 <head>
-    <title>Caduceus</title>
+  <title>Caduceus</title>
     <link rel="icon" href="assets/logo.png">
 </head>
 
 <header>
   <nav id="part-1">
-    <a class="nav-links" href="#about"><h2> About </h2> </a>
-    <a class="nav-links" href="#covid"> <h2> Covid Info</h2> </a>
+    <a class="nav-links" href="#about"><h2> About Website</h2> </a>
+    <a class="nav-links" href="#covid"> <h2> COVID-19 Info</h2> </a>
   </nav>
   
   <div class="header-obj" id="logo-text" >
   <a href=#about><img id="logo"
      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Caduceus.svg/1200px-Caduceus.svg.png" width="35 px"></a>
-  <h1>Caduceus</h1>
+  <h1 id="title">Caduceus</h1>
   </div>
   
    <nav id= "part-2">
     <a class="nav-links" href="#symptoms"><h2>Symptoms and Care</h2> </a>
-    <a class="nav-links" href="#messaging"><h2> Chat to a Doctor</h2> </a>
+    <a class="nav-links" href="#messaging"><h2> Chat a Doctor</h2> </a>
   </nav>
 </header>
   
@@ -195,11 +270,9 @@ footer {
     <h1>About This Website</h1>
     <div class="centered">
      <p> Here at Caduceus, we provide you with information about COVID as well as access to a doctor if you need!</p> 
-     <p>Our <strong>goal</strong> is to deliver messages from people in need of assistance directly to volunteering doctors and<br> 
-       let them see an immediate response.On our front page, we display some general information about COVID.<br> 
-       We display information like the origins of COVID,the symptoms, how to care for someone with COVID, and just to lighten<br>  
-       up the mood a bit, we included a few COVID memes as well.</p>
-     <p>You can <a href="#messaging" class="links">connect with a doctor</a> from anywhere around the world and talk to them about
+     <p>Our <strong>goal</strong> is to deliver messages from people in need of assistance directly to volunteering doctors and let them see an immediate response. On our front page, we display some general information about COVID. We display information like the origins of COVID, the symptoms, how to care for someone with COVID, and just to lighten up the mood a bit, we included a few COVID memes as well.</p>
+      
+     <p>You can <strong><a href="#messaging" class="links">connect with a doctor</a></strong> from anywhere around the world and talk to them about
        anything. Neither the identity of you or the doctor will be compromised.</p>
     </div>
   </section>
@@ -207,10 +280,23 @@ footer {
 
   <section id="covid">
     <h1>What is COVID-19?</h1>
-    <img src="assets/covid.jpg" alt="covid image" width="300" breadth="300">
-    <p> COVID-19 the disease which shook the whole world is caused by a virus commonly known as coronavirus (SARS-CoV-2).</p>
-    <p>It is a respiratory disease which can even cause death. The first Covid case was reported in Wuhan, China which was reported to
-       the WHO in Dec 2019. </p>
+    <div id="img-1-cont">
+    <img id="cov-img" src="assets/covid.jpg" alt="covid image" width="300" breadth="300">
+  <p class="cov-par"> COVID-19 the disease which shook the whole world is caused by a virus commonly known as coronavirus (SARS-CoV-2).</p>
+    <p class="cov-par">It is a respiratory disease which can even cause death. The first COVID case was reported in Wuhan, China which was reported to the WHO in Dec 2019. It's a highly contagious virus; thus, it has taken the world by storm. Many countries have implemented nationwide lockdowns to contain it. This has disrupted regular face-to-face operations and life as we know it. It has affected over 180 million people, and <b>we strongly urge that you take all the precautions you can to prevent yourself from contracting COVID-19.</b></p>
+</div>
+    <br>
+    <br>
+    <h1>How does it spread?</h1>
+       <p class="centered">
+     Coronavirus is mainly spread through droplets and <b>virus particles released into the air an infected person breathes, talks, laughs, sings, coughs or sneezes.</b> Larger droplets may fall to the ground in a few seconds, but tiny infectious particles can linger in the air and travel upto certain distances. These particles can easily accumulate in indoor places, especially where many people are gathered and there is poor ventilation. This is why <b>mask-wearing, hand hygiene and physical distancing</b> are essential to preventing COVID-19.
+   </p> 
+    <br>
+    <br>
+    <h1>Who's more susceptible to it?</h1>
+          <p class="centered">People who are older and have a history of Autoimmune disease, Bone marrow transplant, Cancer, Chronic respiratory condition, Genetic immune deficiency, such as immunosuppressive medication use, such as for inflammatory bowel disease, HIV/AIDS, or other conditions, or Organ transplant have a higher chance of getting more severe symptoms of COVID.
+        </p>
+    
   </section>
   
 
@@ -227,10 +313,11 @@ footer {
     </p>
     <br>
     <br>
-
     <div class="center">
-    <h2>When to see a doctor?</h2>
-    <img src="assets/doctor.jpg" alt="doctor">
+      <h1>When to see a doctor?</h1>
+      <div class="block">
+    <img class="picture" src="assets/doctor.jpg" alt="doctor">
+    <div class="to-flex">
     <p> Immediately see a doctor if you are having any of the following:
     <ul> 
       <li>Trouble breathing </li>
@@ -239,18 +326,9 @@ footer {
       <li>Show pale, gray, or blue-colored skin, lips, or nail beds.</li>
     </ul>
     </p>
+  </div>
+</div>
    <br>
-   <br>
-
-    <h2>Who is more likely to get severe symptoms?</h2>
-      <p>People who are older and have a history of Autoimmune disease, Bone marrow transplant, Cancer,<br>
-         Chronic respiratory condition, Genetic immune deficiency, such as immunosuppressive medication use,<br>
-         such as for inflammatory bowel disease, HIV/AIDS, or other conditions, or Organ transplant have a higher <br>
-         chance of getting more severe symptoms of COVID.
-        </p>
-     <br>
-     <br>
-
      <p>
        <b>
          If you think you may have contracted the coronavirus, you can self check yourself using
@@ -259,42 +337,55 @@ footer {
        <strong>CDC's COVID self-checker.</a></strong>
       </p>
     </div>
- </section>
-
-
-
- <section id="spreads">
-   <h1> How COVID-19 spreads?</h1>
-   <img src="assets/virus_spread.jpg" alt="virus_spread" width="300 px" breadth="300px">
-   <p>
-     Coronavirus is mainly spread through droplets and virus particles released into the air <br>
-     an infected person breathes, talks,laughs, sings, coughs or sneezes. Larger droplets may <br>
-     fall to the ground in a few seconds, but tiny infectious particles can linger in the air <br>
-     and travel upto certain distances. These particles can easily accumulate in indoor places, especially<br>
-     where many people are gathered and there is poor ventilation.This is why mask-wearing,<br>
-     hand hygiene and physical distancing are essential to preventing COVID-19.
-   </p> 
+  <br>
+  <br>
+      <h1>Taking care of a COVID patient</h1>
+    <p class="centered"> Though COVID-19 can be a severe virus, there are also many mild cases that can be treated at home. <b>If you're to care for a COVID patient at home, do the following:</b></p>
+    <ul>
+      <li> Isolate the patient in a separate room with good ventilation</li>
+      <li> Have only one caregiver for the patient, and ensure they use a mask when interacting with them at all times to decrease the chance of infection</li>
+      <li> Make sure that all the patients needs are met (especially when it comes to hydration, fever medicine, and healthy foods)</li>
+      <li> Consistently monitor their condition, ideally do so once a day </li>
+    </ul>
+  <br>
+  <p><b>However, if the patients start showing concerning symptoms, contact a doctor right away.</b></p>
+    <ul>
+  <li><b>Red flags for adults:</b> shortness of breath, heavy breathing, complaining of chest pains, looking dehydrated</li>
+    <li><b>Red flags for children:</b> being off their food, having blue lips or face. </li>
+  </ul>
+  <br>
+  
  </section>
 
 
  <section id="memes">
    <h1> Refreshment</h1><br><br>
-   <img src="assets/memes/1.jpg" alt="meme1" width="300 px" breadth="400 px"><br><br>
-   <img src="assets/memes/2.jpg" alt="meme2" width="300 px" breadth="400 px"><br><br>
-   <img src="assets/memes/3.jpg" alt="meme3" width="300 px" breadth="400 px"><br><br>
-   <img src="assets/memes/4.jpg" alt="meme4" width="300 px" breadth="400 px"><br><br>
-   <img src="assets/memes/5.jpg" alt="meme5" width="300 px" breadth="400 px"><br><br>
-   <img src="assets/memes/6.jpg" alt="meme6" width="300 px" breadth="400 px"><br><br>
-   <img src="assets/memes/7.jpg" alt="meme7" width="300 px" breadth="400 px"><br><br>
-   <img src="assets/memes/8.jpg" alt="meme8" width="300 px" breadth="400 px"><br><br>
-   <img src="assets/memes/9.jpg" alt="meme9" width="300 px" breadth="400 px"><br><br>
-   <img src="assets/memes/10.jpg" alt="meme10" width="300 px" breadth="400 px">
+   <div id="center-this">
+   <div id="row">
+     <div class="column">
+   <img class="grid-item" src="assets/memes/1.jpg" alt="meme1" width="300 px" breadth="400 px"><br><br>
+   <img class="grid-item" src="assets/memes/2.jpg" alt="meme2" width="300 px" breadth="400 px"><br><br>
+   <img class="grid-item" src="assets/memes/3.jpg" alt="meme3" width="300 px" breadth="400 px"><br><br>
+  </div>
+  <div class="column">
+   <img class="grid-item" src="assets/memes/4.jpg" alt="meme4" width="300 px" breadth="400 px"><br><br>
+   <img class="grid-item" src="assets/memes/5.jpg" alt="meme5" width="300 px" breadth="400 px"><br><br>
+   <img class="grid-item" src="assets/memes/6.jpg" alt="meme6" width="300 px" breadth="400 px"><br><br>
+  </div>
+  <div class="column">
+   <img class="grid-item" src="assets/memes/7.jpg" alt="meme7" width="300 px" breadth="400 px"><br><br>
+   <img class="grid-item" src="assets/memes/8.jpg" alt="meme8" width="300 px" breadth="400 px"><br><br>
+   <img class="grid-item" src="assets/memes/9.jpg" alt="meme9" width="300 px" breadth="400 px"><br><br>
+   <img class="grid-item" src="assets/memes/10.jpg" alt="meme10" width="300 px" breadth="400 px">
+     </div>
+  </div>
+</div>
  </section>
  
  
     <!--messages-->
     <section id="messaging">
-      <h1> Message a Doctor </h1>
+      <h1 id="doc"> Message a Doctor </h1>
         <form id="form">
         <label for="name">Name </label>
         <br>
@@ -313,8 +404,8 @@ footer {
 </main>
   
   <footer>
-    <p><h2><b>TAKE NOTE! This website was created solely for the use of submission for the Hackathon Def Hacks 3.0</b></h2></p>
-    <p><h3><b>Made with love by Aparna, Jasmine, Vidhi and Vivian :D</b></h3></p>
+    <p><b>TAKE NOTE! This website was created solely for the use of submission for the Hackathon Def Hacks 3.0</b></p>
+    <p>Made with love by Aparna, Jasmine, Vidhi and Vivian :D</p>
   </footer>
   
 </html>
