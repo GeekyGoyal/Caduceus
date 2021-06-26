@@ -18,6 +18,9 @@ Caduceus is an all in one website where you can find all the basic information a
 * CSS3
 * Node.js
 * Socket.io
+* Vader Sentiment Analysis of NLTK library
+* Machine Learning
+* Python
 
 ## Challenges we ran into
 * We had a few issues using Github desktop.
