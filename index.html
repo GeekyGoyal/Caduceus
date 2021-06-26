@@ -1,18 +1,236 @@
 <!DOCTYPE html>
+<style>
+html {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  background-color: #F4F1DE;
+  padding-left: 0px;
+}
+
+/*header designs*/
+
+header {
+  padding: 20px;
+  border-bottom: 1px solid;
+  border-color: #413620;
+  width: 100%;
+  flex-flow: row;
+  position: fixed;
+  z-index: 1;
+  background-color: #F4F1DE;
+  display: flex;
+  top: 0px;
+  width: 100%;
+  left: 0;
+}
+
+#logo-text {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  color: #413620;
+}
+
+#logo {
+  display: inline-block;
+  margin: 0px;
+}
+
+.nav-links {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #413620;
+  display: inline-block;
+  flex-flow: row;
+}
+
+.nav-links:hover {
+  text-decoration: underline;
+  color: #0D3B66;
+}
+
+#part-2, #part-1 {
+  margin-top: auto;
+  margin-bottom: auto;
+  left: auto;
+  padding: 15px;
+}
+
+#part-2 {
+  padding-right: 40px;
+  right: 0;
+}
+
+/*for text*/
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 9px;
+}
+
+body {
+  font-family: "Helvetica Neue";
+  color: #413620;
+   margin: 0;
+}
+
+/*for the sections*/
+
+section {
+  z-index: 2;
+  width: 96.5%;
+  padding: 60px;
+  text-align: center;
+  border-bottom: 1px solid;
+  border-color: #413620;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#about {
+  margin-top: 99px;
+  background-color: #DF0117;
+  color: white;
+  left: 0;
+}
+
+#symptoms {
+  background-color: #0D3B66;
+  color: white;
+}
+
+.centered {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.links {
+  color: #F4F1DE;
+}
+
+ul {
+  text-align: left;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.6;
+}
+
+/* for message a doctor */
+
+.input {
+  width: 30%;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+#doc {
+  margin-bottom: 16px;
+}
+
+/* for footer */
+footer {
+  padding: 12px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+  </style>
+
+<html>
 <head>
     <title>Caduceus</title>
     <link rel="icon" href="assets/logo.png">
 </head>
+
+<header>
+  <nav id="part-1">
+    <a class="nav-links" href="#about"> About </a>
+    <a class="nav-links" href="#covid"> More about COVID </a>
+  </nav>
+  
+  <div class="header-obj" id="logo-text" >
+  <a href=#about><img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Caduceus.svg/1200px-Caduceus.svg.png" width="35 px"></a>
+  <h1>Caduceus</h1>
+  </div>
+  
+   <nav id= "part-2">
+    <a class="nav-links" href="#symptoms"> Symptoms and Care </a>
+    <a class="nav-links" href="#messaging"> Doctor Chat </a>
+  </nav>
+</header>
+  
+  <br>
+  
+<main>
 <body onload="getPerson()">
-    hi
+  
+  <section id="about">
+    <h1>About This Website</h1>
+    <div class="centered">
+    <p> Here at Caduceus, we provide you with information about COVID as well as access to a doctor if you need!</p> 
+      <p>Our <strong>goal</strong> is to deliver messages from people in need of assistance directly to volunteering doctors and let them see an immediate response.</p>
+<p>On our front page, we display some general information about COVID. We display information like the origins of COVID, the symptoms, how to care for someone with COVID, and just to lighten up the mood a bit, we included COVID memes as well.</p>
+      <p>You can <a href="#messaging" class="links">connect with a doctor from anywhere</a> around the world and talk to them about anything. Neither the identity of you or the doctor will be compromised. 
+ </p>
+    </div>
+  </section>
+  
+  <section id="covid">
+    <h1>Learn More about COVID-19</h1>
+    <p> COVID... lorem ipsum placeholder text. </p>
+  </section>
+  
+  <section id="symptoms">
+    <h1>Symptoms of COVID-19</h1>
+    <p> COVID manifests differently in individuals; however, the infected most usually shows the following: </p>
+      <ul>
+<li> <strong>Most Common:</strong> Fever, fatigue, dry coughing</li>
+<li> <strong>Less Common:</strong> Body aches, sore throat, diarrhea, headaches, loss of senses (taste or smell), rashes or discoloration, eye inflammation</li>
+        <li> <strong>Dangerous symptoms:</strong> Shortness of breath, chest pain, loss of speech and movement</li>
+  </ul>
+<p> It can take anywhere from 5-6 days to 14 days for symptoms to show. 
+     </p>
+    <br>
+    <div class="centered">
+    <p> See a doctor if you are <strong>having trouble breathing, feel a persistent pain or pressure in the chest, have confusion, display an inability to wake or stay awake, or show pale, gray, or blue-colored skin, lips, or nail beds.</strong></p>
+<p>People who are older and have a history of Autoimmune disease, Bone marrow transplant, Cancer, Chronic respiratory condition, Genetic immune deficiency, such as immunosuppressive medication use, such as for inflammatory bowel disease, HIV/AIDS, or other conditions, or Organ transplant have a higher chance of getting more severe symptoms of COVID.</p>
+      <p> If you think you may have contracted the coronavirus, you can self check yourself using <a class="links" href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/coronavirus-self-checker.html"><strong>CDC's COVID self-checker.</a></strong></p>
+    </div>
+
+  </section>
+  
     <!--messages-->
-    <div>
-        <div id="messages"></div>
+    <section id="messaging">
+      <h1> Message a Doctor </h1>
         <form id="form">
-            <input id="message-box" type="text" autocomplete="off">
+        <label for="name">Name </label>
+        <br>
+        <input class="input" id="name-box" name="name" required type="text" placeholder="Ex. John Doe">
+        <br>
+        <label for="message-box"> Your message </label>
+          <br>
+        <textarea id="message-box" type="text" autocomplete="off" class="input"></textarea>
+          <br>
             <button id="send" type="submit">Send</button>
         </form>
-    </div>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="./index.js"></script>
+    </section>
 </body>
+  </main>
+  
+  <footer>
+    <p>TAKE NOTE! This website was created solely for the use of submission for the hackathon Def Hacks 3.0</p>
+  </footer>
+  
+</html>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="./index.js"></script>
