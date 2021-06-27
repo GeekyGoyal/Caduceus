@@ -1,5 +1,5 @@
 # Caduceus
-DefHacks 3.0 project
+DefHacks 3.0 project. Check it out [here](https://devpost.com/software/caduceus-719dub)!
 
 ## Usage
 Run `run.bat` (either by typing [`./run.bat`](./run.bat) in the command line or by clicking on it) or type in `node .` in command line to start the server. Visit [`127.0.0.1:5000`](https://127.0.0.1:5000) to see the client side.
