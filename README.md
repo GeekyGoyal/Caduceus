@@ -40,4 +40,5 @@ We are proud of how much we accomplished during this time frame. We learned new 
 ## What's next for Caduceus
 * We can use questions to evaluate the competency of the doctor rather than taking their word for it if they say "yes"
 * We could distribute the doctor-to-patient ratio to maybe around 1:3 instead of 1:1 for more efficiency.
+* Use this link (https://discord.com/oauth2/authorize?client_id=858384575113199638&permissions=2148001856&scope=bot) to try to add the bot to your Discord guild. (The bot is not currently always running on a server - coming soon!)
 
