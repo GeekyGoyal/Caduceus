@@ -24,9 +24,16 @@ Caduceus is an all-in-one website where you can find all the basic information a
 
 ## Challenges we ran into
 * We had a few issues using GitHub desktop.
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+* We ran into trouble with collaboration as many of us were in drastically different time zones. Eventually, we saw this as an advantage as we were able to work 24 hours around the clock. It was also amazing to collaborate with people from different countries.
+=======
+>>>>>>> d7437bcacce23fba77bb4cab9c650301707fd477
+>>>>>>> Stashed changes
 
 ## Accomplishments that we're proud of
-We're proud of learning new technologies and working well together as a team!
+We are proud of how much we accomplished during this time frame. We're learned new technologies and working well together as a team!
 
 ## What we learned
 * Socket.io chatroom
